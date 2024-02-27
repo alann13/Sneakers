@@ -9,7 +9,7 @@
   <body>
     <header>
       <div class="logo-and-nav">
-        <h1><img src="images/logo.svg" alt="sneakers" /></h1>
+        <h1><img src="/logo.svg" alt="sneakers" /></h1>
         <nav>
           <ul>
             <li><a href="#">collections</a></li>
@@ -21,16 +21,23 @@
         </nav>
       </div>
       <menu>
-        <button><img src="/icon-cart.svg" alt="cart icon" /></button>
-        <button><img src="/image-avatar.png" alt="avatar" /></button>
+        <button>
+          <img class="cart-btn" src="/icon-cart.svg" alt="cart icon" />
+        </button>
+        <button>
+          <img class="avatar-btn" src="/image-avatar.png" alt="avatar" />
+        </button>
       </menu>
     </header>
     <main>
       <section class="product-content">
         <div class="product-carousel">
-          <div>
-            <img src="/image-product-1.jpg" alt="sneaker product" />
-          </div>
+          <img
+            class="active-carousel-img"
+            src="/image-product-1.jpg"
+            alt="sneaker product"
+          />
+
           <ul>
             <li>
               <img
@@ -58,7 +65,7 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div class="product-description">
           <h2>sneaker company</h2>
           <h3>fall limited edition sneakers</h3>
           <p>
@@ -66,19 +73,19 @@
             Featuring a durable rubber outer sole, they’ll withstand everything
             the weather can offer.
           </p>
-          <div>
+          <div class="current-pricing">
             <p>$125.00</p>
             <span>50%</span>
           </div>
           <p>$250.00</p>
-        </div>
-        <div>
           <div>
-            <button>-</button>
-            <p>0</p>
-            <button>+</button>
+            <div>
+              <button>-</button>
+              <p>0</p>
+              <button>+</button>
+            </div>
+            <button>add to cart</button>
           </div>
-          <button>add to cart</button>
         </div>
       </section>
     </main>

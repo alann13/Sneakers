@@ -1,0 +1,13 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Kumbh Sans';
+  font-weight: 400;
+  src: url('../fonts/KumbhSans-Regular.ttf');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Kumbh Sans';
+  font-weight: 700;
+  src: url('../fonts/KumbhSans-Bold.ttf');
+}
