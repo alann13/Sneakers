@@ -50,7 +50,7 @@ header menu button {
   cursor: pointer;
 }
 
-header menu .cart-btn {
+header menu .cart-icon-btn {
   margin-top: 15px;
 }
 
@@ -59,6 +59,11 @@ header menu .avatar-btn {
   height: 50px;
   width: 50px;
   margin-bottom: 2.25rem;
+}
+
+dialog {
+  box-shadow: 0px 20px 50px -20px rgba(29, 32, 38, 0.5);
+  border-radius: 10px;
 }
 
 main {
@@ -133,4 +138,13 @@ main {
   font-size: 1rem;
   font-weight: 700;
   padding: 3.5px 10px;
+}
+
+.cart-ui,
+.cart-ui-btns {
+  display: flex;
+}
+
+.cart-ui {
+  gap: 1rem;
 }

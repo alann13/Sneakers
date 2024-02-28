@@ -12,18 +12,21 @@
         <h1><img src="/logo.svg" alt="sneakers" /></h1>
         <nav>
           <ul>
-            <li><a href="#">collections</a></li>
-            <li><a href="#">men</a></li>
-            <li><a href="#">women</a></li>
-            <li><a href="#">about</a></li>
-            <li><a href="#">contact</a></li>
+            <li><a href="/">collections</a></li>
+            <li><a href="/">men</a></li>
+            <li><a href="/">women</a></li>
+            <li><a href="/">about</a></li>
+            <li><a href="/">contact</a></li>
           </ul>
         </nav>
       </div>
       <menu>
         <button>
-          <img class="cart-btn" src="/icon-cart.svg" alt="cart icon" />
+          <img class="cart-icon-btn" src="/icon-cart.svg" alt="cart icon" />
         </button>
+        <dialog class="cart-dialog">
+          <p>Cart</p>
+        </dialog>
         <button>
           <img class="avatar-btn" src="/image-avatar.png" alt="avatar" />
         </button>
@@ -38,29 +41,33 @@
             alt="sneaker product"
           />
 
-          <ul>
+          <ul id="product-image-list">
             <li>
               <img
+                alt="product thumbnail"
+                data-image-product="1"
                 src="/image-product-1-thumbnail.jpg"
-                alt="product thumbnail"
               />
             </li>
             <li>
               <img
+                alt="product thumbnail 2"
+                data-image-product="2"
                 src="/image-product-2-thumbnail.jpg"
-                alt="product thumbnail"
               />
             </li>
             <li>
               <img
+                alt="product thumbnail 3"
+                data-image-product="3"
                 src="/image-product-3-thumbnail.jpg"
-                alt="product thumbnail"
               />
             </li>
             <li>
               <img
+                alt="product thumbnail 4"
+                data-image-product="4"
                 src="/image-product-4-thumbnail.jpg"
-                alt="product thumbnail"
               />
             </li>
           </ul>
@@ -78,13 +85,13 @@
             <span>50%</span>
           </div>
           <p>$250.00</p>
-          <div>
-            <div>
-              <button>-</button>
-              <p>0</p>
-              <button>+</button>
+          <div class="cart-ui">
+            <div class="cart-ui-btns">
+              <button class="minus-btn">-</button>
+              <p class="add-to-cart-number">0</p>
+              <button class="add-btn">+</button>
             </div>
-            <button>add to cart</button>
+            <button class="add-to-cart-btn">add to cart</button>
           </div>
         </div>
       </section>
